@@ -700,8 +700,7 @@ textarea.form-input { resize:vertical; min-height:80px; }
 <!-- ══════════════════════ PIPELINE ══════════════════════ -->
 <div class="page" id="page-pipeline">
   <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:var(--sp-5);flex-wrap:wrap;gap:var(--sp-3)">
-    <div><h2 style="font-family:var(--font-display);font-size:var(--text-xl);font-weight:800">Recruiting Pipeline</h2><p class="text-muted text-sm">Track every prospect from cold lead to signed agent.</p></div>
-    <button class="btn btn-accent" onclick="openAddProspect()"><i data-lucide="plus" size="13"></i>Add Prospect</button>
+    <p class="text-muted text-sm">Track every prospect from cold lead to signed agent.</p>
   </div>
   <div class="pipeline-board" id="pipeline-board"></div>
 </div>
@@ -709,7 +708,6 @@ textarea.form-input { resize:vertical; min-height:80px; }
 <!-- ══════════════════════ PROSPECTS ══════════════════════ -->
 <div class="page" id="page-prospects">
   <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:var(--sp-5);flex-wrap:wrap;gap:var(--sp-3)">
-    <h2 style="font-family:var(--font-display);font-size:var(--text-xl);font-weight:800">Prospect Database</h2>
     <div class="flex gap-3" style="flex-wrap:wrap">
       <select class="form-input" id="filter-type" onchange="renderProspects()" style="width:170px"><option value="">All Lines</option><option>Personal Lines</option><option>Commercial Lines</option><option>Both</option><option>Life & Health</option></select>
       <select class="form-input" id="filter-stage" onchange="renderProspects()" style="width:150px"><option value="">All Stages</option><option>New Lead</option><option>Contacted</option><option>Appointment</option><option>Offer Sent</option><option>Closed</option></select>
@@ -723,7 +721,6 @@ textarea.form-input { resize:vertical; min-height:80px; }
 
 <!-- ══════════════════════ CARRIERS ══════════════════════ -->
 <div class="page" id="page-carriers">
-  <h2 style="font-family:var(--font-display);font-size:var(--text-xl);font-weight:800;margin-bottom:var(--sp-2)">Carrier Intelligence Board</h2>
   <p class="text-muted text-sm mb-4">Live market status as of March 2026. Use this in EVERY recruiting conversation.</p>
   <div class="alert alert-error mb-4">
     <i data-lucide="x-circle" size="16" style="flex-shrink:0"></i>
@@ -749,7 +746,6 @@ textarea.form-input { resize:vertical; min-height:80px; }
 
 <!-- ══════════════════════ MARKET / CRISIS ══════════════════════ -->
 <div class="page" id="page-market">
-  <h2 style="font-family:var(--font-display);font-size:var(--text-xl);font-weight:800;margin-bottom:var(--sp-2)">NorCal Market Crisis Intelligence</h2>
   <p class="text-muted text-sm mb-4">Know every fact on this page. This is your edge in every single conversation.</p>
   <div class="grid-3 mb-4">
     <div class="card" style="border-top:3px solid var(--error);box-shadow:var(--shadow-sm),0 0 30px rgba(239,68,68,.08)"><div class="kpi-label">CA Coverage Shortfall</div><div style="font-family:var(--font-display);font-size:1.8rem;font-weight:800;color:var(--error)">$1.35T–$2T</div><div class="text-sm text-muted">McKinsey, October 2025</div></div>
@@ -766,7 +762,6 @@ textarea.form-input { resize:vertical; min-height:80px; }
 
 <!-- ══════════════════════ TERRITORY ══════════════════════ -->
 <div class="page" id="page-territory">
-  <h2 style="font-family:var(--font-display);font-size:var(--text-xl);font-weight:800;margin-bottom:var(--sp-2)">Territory Intelligence — Northern California by County</h2>
   <p class="text-muted text-sm mb-4">Sorted by opportunity score. Red counties = maximum urgency. Use this to prioritize where to spend time.</p>
   <div class="table-wrap"><table class="data-table"><thead><tr>
     <th>County</th><th>Fire Hazard</th><th>Private Carrier Access</th><th>FAIR Plan %</th><th>Avg Premium ↑</th><th class="sortable">Opp. Score</th><th>Best Prospect Type</th>
@@ -776,7 +771,6 @@ textarea.form-input { resize:vertical; min-height:80px; }
 
 <!-- ══════════════════════ SCRIPTS ══════════════════════ -->
 <div class="page" id="page-scripts">
-  <h2 style="font-family:var(--font-display);font-size:var(--text-xl);font-weight:800;margin-bottom:var(--sp-2)">Scripts, Objection Handlers & Talk Tracks</h2>
   <p class="text-muted text-sm mb-4">Word-for-word scripts built for the NorCal market crisis. Memorize the objection handlers.</p>
   <div class="tabs" id="script-tabs">
     <div class="tab active" onclick="scriptTab('recruiting',this)">Recruiting Scripts</div>
@@ -793,7 +787,7 @@ textarea.form-input { resize:vertical; min-height:80px; }
 <!-- ══════════════════════ DAILY GAME PLAN ══════════════════════ -->
 <div class="page" id="page-daily">
   <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:var(--sp-5);flex-wrap:wrap;gap:var(--sp-3)">
-    <div><h2 style="font-family:var(--font-display);font-size:var(--text-xl);font-weight:800">Daily Game Plan</h2><p class="text-muted text-sm" id="today-date"></p></div>
+    <p class="text-muted text-sm" id="today-date"></p>
     <button class="btn btn-ghost" onclick="resetDaily()"><i data-lucide="rotate-ccw" size="13"></i>Reset Day</button>
   </div>
   <div class="grid-2">
@@ -818,7 +812,6 @@ textarea.form-input { resize:vertical; min-height:80px; }
 
 <!-- ══════════════════════ CALCULATOR ══════════════════════ -->
 <div class="page" id="page-calculator">
-  <h2 style="font-family:var(--font-display);font-size:var(--text-xl);font-weight:800;margin-bottom:var(--sp-2)">Income & Commission Calculator</h2>
   <p class="text-muted text-sm mb-4">Model your override income and show prospects their earning potential in the crisis market.</p>
   <div class="grid-2">
     <div class="card">
